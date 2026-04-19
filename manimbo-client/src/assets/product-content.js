@@ -1,10 +1,98 @@
+import productImage1 from './img/1.jpg';
+import productImage2 from './img/2.jpg';
+import productImage3 from './img/3.jpg';
+import productImage4 from './img/4.jpg';
+import productImage5 from './img/5.jpg';
+import productImage6 from './img/6.jpg';
+import productImage7 from './img/7.jpg';
+import productImage8 from './img/8.jpg';
+
 const products = [
+  {
+    name: 'nu-sports-shirt',
+    title: 'NU Sports Shirt',
+    category: 'Campus Apparel',
+    price: 'PHP 1,499',
+    stock: 'In stock',
+    image: productImage1,
+    content: [
+      'A soft everyday shirt with a relaxed fit for classrooms, commute days, and weekends.',
+      'The soft cotton blend keeps structure while staying comfortable for regular wear.',
+      'Available through preorder so sizes can be reserved before release.',
+    ],
+  },
+  {
+    name: 'nu-graphic-tee',
+    title: 'NU Graphic Tee',
+    category: 'Campus Apparel',
+    price: 'PHP 1,249',
+    stock: 'In stock',
+    image: productImage2,
+    content: [
+      'A soft everyday shirt with a relaxed fit for classrooms, commute days, and weekends.',
+      'The soft cotton blend keeps structure while staying comfortable for regular wear.',
+      'Available through preorder so sizes can be reserved before release.',
+    ],
+  },
+  {
+    name: 'nu-sports-cap',
+    title: 'NU Sports Cap',
+    category: 'Campus Apparel',
+    price: 'PHP 999',
+    stock: 'Low stock',
+    image: productImage3,
+    content: [
+      'Complete your look with this classic NU cap.',
+      'It provides both style and protection from the sun.',
+      'A simple accessory that shows your NU pride wherever you go.',
+    ],
+  },
+  {
+    name: 'bulldog-plush',
+    title: 'Bulldog Plush',
+    category: 'Dorm & Decor',
+    price: 'PHP 899',
+    stock: 'Preorder',
+    image: productImage4,
+    content: [
+      'A cute and cuddly plush toy featuring the beloved Bulldog mascot.',
+      'Perfect for adding a touch of school spirit to your dorm or study space.',
+      'Available through preorder so you can secure one before it\'s released.',
+    ],
+  },
+  {
+    name: 'nu-lab-gown',
+    title: 'NU Lab Gown',
+    category: 'Campus Uniform',
+    price: 'PHP 599',
+    stock: 'Preorder',
+    image: productImage5,
+    content: [
+      'A comfortable and practical lab gown for students in science and laboratory courses.',
+      'Made with a breathable fabric that allows for ease of movement during experiments.',
+      'Available through preorder so you can secure one before it\'s released.',
+    ],
+  },
+  {
+    name: 'nu-tumbler',
+    title: 'NU Tumbler',
+    category: 'Daily Essentials',
+    price: 'PHP 449',
+    stock: 'In stock',
+    image: productImage6,
+    content: [
+      'Stay refreshed with this sleek NU tumbler.',
+      'It’s durable, easy to carry, and perfect for everyday hydration.',
+      'A practical item that also showcases your school pride.',
+    ],
+  },
   {
     name: 'campus-tote-bag',
     title: 'Campus Tote Bag',
-    category: 'Bags',
+    category: 'Daily Essentials',
     price: 'PHP 499',
     stock: 'In stock',
+    image: productImage7,
     content: [
       'A roomy everyday tote for books, gym clothes, chargers, and quick campus errands.',
       'Made with thick canvas, reinforced handles, and a clean monochrome print.',
@@ -12,87 +100,16 @@ const products = [
     ],
   },
   {
-    name: 'daily-notes-pack',
-    title: 'Daily Notes Pack',
-    category: 'Stationery',
-    price: 'PHP 249',
+    name: 'college-tourism-uniform',
+    title: 'College of Tourism Uniform',
+    category: 'Campus Uniform',
+    price: 'PHP 999',
     stock: 'In stock',
+    image: productImage8,
     content: [
-      'A practical bundle of notebooks, sticky notes, and quick-label tabs for daily class work.',
-      'The set is light, compact, and easy to keep inside a backpack or locker.',
-      'Useful for lectures, reminders, project lists, and exam review schedules.',
-    ],
-  },
-  {
-    name: 'stainless-tumbler',
-    title: 'Stainless Tumbler',
-    category: 'Drinkware',
-    price: 'PHP 599',
-    stock: 'Low stock',
-    content: [
-      'A double-wall tumbler built for water, coffee, or tea during long school days.',
-      'The matte finish keeps the look simple while the lid helps reduce spills in your bag.',
-      'Fits most side pockets and keeps drinks ready between classes.',
-    ],
-  },
-  {
-    name: 'wireless-study-lamp',
-    title: 'Wireless Study Lamp',
-    category: 'Tech',
-    price: 'PHP 899',
-    stock: 'In stock',
-    content: [
-      'A compact rechargeable lamp for dorm desks, night study sessions, and small workspaces.',
-      'It has three brightness levels and a foldable body that stores neatly after use.',
-      'Good for reading, writing, and focused desk work without taking too much space.',
-    ],
-  },
-  {
-    name: 'hoodie-jacket',
-    title: 'Hoodie Jacket',
-    category: 'Apparel',
-    price: 'PHP 1,199',
-    stock: 'Preorder',
-    content: [
-      'A soft everyday hoodie with a relaxed fit for classrooms, commute days, and weekends.',
-      'The heavy cotton blend keeps structure while staying comfortable for regular wear.',
-      'Available through preorder so sizes can be reserved before release.',
-    ],
-  },
-  {
-    name: 'desk-organizer-kit',
-    title: 'Desk Organizer Kit',
-    category: 'Workspace',
-    price: 'PHP 349',
-    stock: 'In stock',
-    content: [
-      'A small organizer set for pens, clips, cables, cards, and other desk essentials.',
-      'The modular pieces can be arranged based on your study area or dorm table.',
-      'Keeps daily tools visible without adding clutter.',
-    ],
-  },
-  {
-    name: 'id-lanyard-set',
-    title: 'ID Lanyard Set',
-    category: 'Accessories',
-    price: 'PHP 179',
-    stock: 'In stock',
-    content: [
-      'A durable lanyard and card holder set for IDs, access cards, and small passes.',
-      'The clip is easy to detach when scanning or presenting credentials.',
-      'Simple enough for daily use and sturdy enough for a full semester.',
-    ],
-  },
-  {
-    name: 'exam-week-care-pack',
-    title: 'Exam Week Care Pack',
-    category: 'Bundles',
-    price: 'PHP 399',
-    stock: 'In stock',
-    content: [
-      'A compact bundle with snacks, tabs, pens, and quick notes for busy review weeks.',
-      'Packed for convenience so students can grab one kit and focus on studying.',
-      'Ideal as a personal prep item or a small gift for classmates.',
+      'Look sharp and professional with the official NU uniform.',
+      'It reflects the university’s standards of excellence and discipline.',
+      'Designed for both comfort and confidence throughout the day.',
     ],
   },
 ];
