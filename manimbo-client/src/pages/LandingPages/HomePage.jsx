@@ -16,7 +16,7 @@ const HomePage = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-[#34418e]/96 via-[#34418e]/76 to-[#34418e]/16" />
 
-                    <div className="relative z-10 grid min-h-[35rem] items-end gap-8 px-5 py-8 sm:px-8 lg:grid-cols-[1fr_0.8fr] lg:px-12">
+                    <div className="relative z-10 grid min-h-[35rem] items-end gap-8 px-5 py-8 sm:px-8 lg:px-12">
                         <div className="max-w-3xl pb-8">
                             <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.22em] text-[#ffd320]">
                                 Campus Marketplace
@@ -34,19 +34,6 @@ const HomePage = () => {
                                 <Button to="/about">
                                     About Store
                                 </Button>
-                            </div>
-                        </div>
-
-                        <div className="grid gap-3 rounded-lg border border-[#f9fcf8]/14 bg-[#f9fcf8]/10 p-4 text-[#f9fcf8] backdrop-blur-md">
-                            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#ffd320]">
-                                Open for pickup
-                            </p>
-                            <div className="grid grid-cols-3 gap-3">
-                                {['08 items', '06 types', '03 slots'].map((item) => (
-                                    <div key={item} className="rounded-lg bg-[#f9fcf8]/10 px-3 py-4 text-center">
-                                        <p className="text-sm font-bold">{item}</p>
-                                    </div>
-                                ))}
                             </div>
                         </div>
                     </div>
